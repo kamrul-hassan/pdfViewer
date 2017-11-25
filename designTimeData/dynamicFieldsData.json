@@ -1,0 +1,20 @@
+[
+    { "FIELD_NAME": "customerName", "FIELD_LABEL": "NOM DE LA PHARMACIE", "FIELD_INIT": "customer/name", "DATA_TYPE": "A", "IS_VISIBLE": 1, "IS_MANDATORY": 1, "SORT_ORDER": 1, "LEFT": 46, "TOP": 18.5, "LENGTH": null, "WIDTH": null, "PAGE_NUMBER": 1 },
+    { "FIELD_NAME": "CIPCode", "FIELD_LABEL": " CODE CIP CLIENT ", "FIELD_INIT": "", "DATA_TYPE": "A", "IS_VISIBLE": 1, "IS_MANDATORY": 1, "SORT_ORDER": 2, "LEFT": 128, "TOP": 18.5, "LENGTH": null, "WIDTH": null, "PAGE_NUMBER": 1 },
+    { "FIELD_NAME": "eventDate", "FIELD_LABEL": " DATE ", "FIELD_INIT": "", "DATA_TYPE": "D", "IS_VISIBLE": 1, "IS_MANDATORY": 1, "SORT_ORDER": 3, "LEFT": 172, "TOP": 18.5, "LENGTH": null, "WIDTH": null, "PAGE_NUMBER": 1 },
+    { "FIELD_NAME": "pharmacy", "FIELD_LABEL": "La pharmacie", "FIELD_INIT": "", "DATA_TYPE": "A", "IS_VISIBLE": 1, "IS_MANDATORY": 1, "SORT_ORDER": 4, "LEFT": 55, "TOP": 42, "LENGTH": null, "WIDTH": null, "PAGE_NUMBER": 1 },
+    { "FIELD_NAME": "customerLocation", "FIELD_LABEL": " située ", "FIELD_INIT": "", "DATA_TYPE": "A", "IS_VISIBLE": 1, "IS_MANDATORY": 1, "SORT_ORDER": 5, "LEFT": 55, "TOP": 46, "LENGTH": null, "WIDTH": null, "PAGE_NUMBER": 1 },
+    { "FIELD_NAME": "pharmacyHolder", "FIELD_LABEL": " représentée par ", "FIELD_INIT": "", "DATA_TYPE": "A", "IS_VISIBLE": 1, "IS_MANDATORY": 1, "SORT_ORDER": 6, "LEFT": 55, "TOP": 49, "LENGTH": null, "WIDTH": null, "PAGE_NUMBER": 1 },
+    { "FIELD_NAME": "yearlyTurnover", "FIELD_LABEL": " CA thérapeutique ", "FIELD_INIT": "", "DATA_TYPE": "I", "IS_VISIBLE": 1, "IS_MANDATORY": 1, "SORT_ORDER": 7, "LEFT": 100, "TOP": 106, "LENGTH": null, "WIDTH": null, "PAGE_NUMBER": 1 },
+    { "FIELD_NAME": "shareOfSpaceObjective", "FIELD_LABEL": " % PDL Gallia ", "FIELD_INIT": "", "DATA_TYPE": "N", "IS_VISIBLE": 1, "IS_MANDATORY": 1, "SORT_ORDER": 8, "LEFT": 110, "TOP": 181, "LENGTH": null, "WIDTH": null, "PAGE_NUMBER": 1 },
+    { "FIELD_NAME": "salesTerms", "FIELD_LABEL": " conditions commerciales ", "FIELD_INIT": "", "DATA_TYPE": "A", "IS_VISIBLE": 1, "IS_MANDATORY": 0, "SORT_ORDER": 9, "LEFT": 13, "TOP": 200, "LENGTH": null, "WIDTH": null, "PAGE_NUMBER": 1 },
+    { "FIELD_NAME": "madeIn", "FIELD_LABEL": " fait à ", "FIELD_INIT": "", "DATA_TYPE": "A", "IS_VISIBLE": 1, "IS_MANDATORY": 1, "SORT_ORDER": 10, "LEFT": 25, "TOP": 259, "LENGTH": null, "WIDTH": null, "PAGE_NUMBER": 1 },
+    { "FIELD_NAME": "repEmail", "FIELD_LABEL": "-", "FIELD_INIT": "", "DATA_TYPE": "E", "IS_VISIBLE": 0, "IS_MANDATORY": 1, "SORT_ORDER": -1, "LEFT": null, "TOP": null, "LENGTH": null, "WIDTH": null, "PAGE_NUMBER": 0 },
+    { "FIELD_NAME": "customerEmail", "FIELD_LABEL": "-", "FIELD_INIT": "", "DATA_TYPE": "E", "IS_VISIBLE": 0, "IS_MANDATORY": 1, "SORT_ORDER": -2, "LEFT": null, "TOP": null, "LENGTH": null, "WIDTH": null, "PAGE_NUMBER": 0 },
+    { "FIELD_NAME": "adminEmail", "FIELD_LABEL": "-", "FIELD_INIT": "admin@danone.com", "DATA_TYPE": "E", "IS_VISIBLE": 0, "IS_MANDATORY": 1, "SORT_ORDER": -3, "LEFT": null, "TOP": null, "LENGTH": null, "WIDTH": null, "PAGE_NUMBER": 0 },
+    { "FIELD_NAME": "emailPharmacist", "FIELD_LABEL": "Courriel du pharmacien", "FIELD_INIT": "", "DATA_TYPE": "E", "IS_VISIBLE": 1, "IS_MANDATORY": 1, "SORT_ORDER": -4, "LEFT": null, "TOP": null, "LENGTH": null, "WIDTH": null, "PAGE_NUMBER": 0 },
+    {"FIELD_NAME":"repSignature","FIELD_LABEL":"Signature Blédina ","FIELD_INIT":"","DATA_TYPE":"S","IS_VISIBLE":1,"IS_MANDATORY":1,"SORT_ORDER":-5,"LEFT":44,"TOP":263,"LENGTH":null,"WIDTH":null,"PAGE_NUMBER":0},
+    {"FIELD_NAME":"customerSignature","FIELD_LABEL":"Signature Pharmacie ","FIELD_INIT":"","DATA_TYPE":"S","IS_VISIBLE":1,"IS_MANDATORY":1,"SORT_ORDER":-6,"LEFT":141,"TOP":263,"LENGTH":null,"WIDTH":null,"PAGE_NUMBER":0},  
+    { "FIELD_NAME": "isPharmacistSignature", "FIELD_LABEL": "Signature du pharmacien", "FIELD_INIT": "", "DATA_TYPE": "B", "IS_VISIBLE": 1, "IS_MANDATORY": 1, "SORT_ORDER": -7, "LEFT": null, "TOP": null, "LENGTH": null, "WIDTH": null, "PAGE_NUMBER": 0 }
+    
+]

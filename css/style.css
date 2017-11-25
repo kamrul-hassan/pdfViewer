@@ -1,0 +1,86 @@
+.body-section{
+    margin-top: 50px !important;
+    margin: 0 15px 0 15px;
+}
+.custom-col{
+    margin-bottom: 10px;
+}
+.hide{
+    display: none;
+}
+.validation-summary-errors{
+    color: #bf1616;
+}
+.formulary-list tr{
+    cursor: pointer;
+}
+.formulary-list tr.active{
+    color: #fff;
+    background-color: #343a40;
+    border-color: #343a40;
+}
+.formulary-list tr.active:hover{
+    color: #fff;
+    background-color: #343a40;
+    border-color: #343a40;
+}
+.formulary-list tr.disabled{
+    cursor: default;
+}
+#formulary-table{
+    display:table;
+    border-collapse:collapse;
+    border:1px solid grey;
+    width: 100%;
+}
+.table-header{
+    background-color: #343a40;
+    display:table-row;
+    color: #FFFFFF;
+    font-weight:bold; 
+}
+.table-row{
+    display:table-row;
+    border:1px solid grey;
+}
+.table-row:hover{
+    background-color: #dddfe2;
+}
+.table-row.active{
+    background-color: rgba(0,0,0,.075);
+}
+.table-cell{
+    display:table-cell;
+    padding: 8px 0;
+    text-align: center;
+    border:1px solid grey;
+}
+#fill-attributes-form{
+    margin: 5px 15px 5px 15px;
+}
+
+.wrapper {
+    position: relative;
+    width: 350px;
+    height: 150px;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }  
+  .signature-pad {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width:350px;
+    height:150px;
+    background-color: #FFFFFF;
+    border: 1px solid #ced4da;    
+  }
+  .margin-right-10{
+      margin-right: 10px;
+  }
+  .custom-row{
+      margin-top: 10px;
+      width: 100%;
+  }

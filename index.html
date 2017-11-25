@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Blédina | eContracts Management</title>
+  <!-- Bootstrap core CSS -->
+  <link href="lib/bootstrap/bootstrap.min.css" rel="stylesheet">
+  <link href="lib/bootstrap/bootstrap-grid.min.css" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="fluid-container">
+      <a class="navbar-brand" href="#">Blédina | eContracts Management</a>
+    </div>
+  </nav>
+  <!-- Content section -->
+  <section class="py-3 body-section">
+    <div class="fluid-container">
+      <div class="row">
+        <div class="col custom-col">            
+          <button type="button" onclick="window.location.reload(true);" class="btn btn-secondary">Cancel</button>
+        </div>
+        <div class="col text-right custom-col">
+          <button type="button" id="previous-view" class="btn btn-primary hide" onclick="App.previousPage()">&lt;&lt; Previous</button>
+          <button type="button" id="next-view" class="btn btn-primary" onclick="App.nextPage()" disabled="disabled">Next &gt;&gt;</button>
+          <button type="button" id="validate-form" class="btn btn-primary hide" onclick="App.save()">Validate</button>
+        </div>
+      </div>
+      <div class="row page" id="select-formulary-section">
+        <div class="col">
+          <div class="card">
+            <div class="card-header">
+              Select a formulary
+            </div>
+            <div class="card-block">
+              <div class="row" style="margin-top: 15px; margin-bottom: 15px">
+                <div class="col-5" >
+                    <div id="formulary-table">
+                        <div class="table-header">
+                            <div class="table-cell">Name</div>
+                            <div class="table-cell">Version Number</div>
+                            <div class="table-cell">Publish Date</div>
+                        </div>                      
+                    </div>                            
+                </div>
+                <div class="col-7">
+                  <div class="row">
+                    <div class="col">
+                      <iframe id="viewFormulary" type="application/pdf" src="" width="100%" height="600"></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="row page hide" id="fill-attributes-section">
+        <div class="col">
+          <div class="card">
+            <div class="card-header">
+              Fill attributes
+            </div>
+            <div class="card-block">
+              <form>
+                <div id="fill-attributes-form">
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="customerName">NOM DE LA PHARMACIE</label>
+                      <input type="text" class="form-control" id="customerName" placeholder="Enter NOM DE LA PHARMACIE">
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="CIPCode">CODE CIP CLIENT</label>
+                      <input type="text" class="form-control" id="CIPCode" placeholder="Enter CODE CIP CLIENT">
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="eventDate">DATE</label>
+                      <input type="date" class="form-control" id="eventDate" placeholder="Enter DATE">
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="pharmacy">La pharmacie</label>
+                      <input type="text" class="form-control" id="pharmacy" placeholder="Enter La pharmacie">
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="customerLocation">située</label>
+                      <input type="text" class="form-control" id="customerLocation" placeholder="Enter située">
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="pharmacyHolder">représentée par</label>
+                      <input type="text" class="form-control" id="pharmacyHolder" placeholder="Enter représentée par">
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="yearlyTurnover">CA thérapeutique</label>
+                      <input type="number" class="form-control" id="yearlyTurnover" placeholder="Enter CA thérapeutique">
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="shareOfSpaceObjective">% PDL Gallia</label>
+                      <input type="number" class="form-control" id="shareOfSpaceObjective" placeholder="Enter % PDL Gallia">
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <label for="salesTerms">conditions commerciales</label>
+                    <input type="text" class="form-control" id="salesTerms" placeholder="Enter conditions commerciales ">
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="madeIn">fait à</label>
+                      <input type="text" class="form-control" id="madeIn" placeholder="Enter fait à">
+                    </div>                    
+                  </div>                  
+                </div>
+              </form>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="row page hide" id="review-section">
+          <div class="col">
+              <div class="card">
+                <div class="card-header">
+                    Review, sign and validate 
+                </div>
+                <div class="card-block">
+                  <div class="row" style="margin-top: 15px; margin-bottom: 15px">                    
+                    <div class="col-8">
+                      <div class="row">
+                        <div class="col">
+                          <iframe id="pdf_preview" type="application/pdf" src="" width="100%" height="600"></iframe>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col" id="signature-section">                        
+                    </div>
+                  </div>
+                </div>
+    
+              </div>
+            </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- Footer -->
+  <footer class="py-3 bg-dark">
+    <div class="fluid-container">
+      <p class="m-0 text-center text-white">Copyright &copy; QuintilesIMS 2017</p>
+    </div>
+  </footer>
+  <div id="validation-modal" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Validation error message</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body" id="validation-message">         
+        </div>
+        <div class="modal-footer">
+          <button type="button" data-dismiss="modal" class="btn btn-primary">Close</button>          
+        </div>
+      </div>
+    </div>
+  </div>  
+  <div id="error-message-modal" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Message</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body" id="error-message-body">         
+        </div>
+        <div class="modal-footer">
+          <button type="button" data-dismiss="modal" class="btn btn-primary">Close</button>          
+        </div>
+      </div>
+    </div>
+  </div> 
+  <!-- External Librairies -->
+  <script src="lib/signature_pad/signature_pad.js"></script> 
+  <script src="lib/jquery/jquery-3.2.1.min.js"></script>  
+  <script src="lib/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="lib/jspdf/jspdf.min.js"></script>  
+  <script src="js/infrastructure.js"></script>  
+  <script src="js/app.js"></script>
+  
+</body>
+
+</html>

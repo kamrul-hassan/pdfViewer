@@ -1,0 +1,26 @@
+/* Remove 300ms delay on top on IE11+ */
+html { touch-action: manipulation; }
+
+body { 
+	margin: 0px; 
+	padding: 0px; 
+	color: black;
+	font-family: Arial,sans-serif;
+	//overflow: hidden;
+}
+
+/* debug output */
+p.debug {
+	font-family: Courier;
+	border-left: 1px dashed #f0f0f0;
+	border-right: px dashed #f0f0f0;
+	border-bottom: 1px solid #f0f0f0;
+	margin: 0px;
+	padding: 2px;
+	color: #0a0a0f;
+}
+
+#debug p:nth-child(odd) { background-color: #f8f8f0; }
+#debug p:nth-child(even) { background-color: #ffff8; }
+
+/* EOS */
